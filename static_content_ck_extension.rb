@@ -1,7 +1,7 @@
 # Uncomment this if you reference any of your controllers in activate
 # require_dependency 'application'
 
-class StaticContentExtension < Spree::Extension
+class StaticContentCkExtension < Spree::Extension
   version "0.1"
   description "Static content extension for managing static content. Aimed to using with CKEditor."
   url "http://github.com/x2es/spree-static-content-ck"
@@ -27,9 +27,9 @@ class StaticContentExtension < Spree::Extension
 
         if @page = Page.visible.find_by_slug(request.path)
           if @page.layout && !@page.layout.empty?
-            render :template => 'static_content/show', :layout => @page.layout
+            render :template => 'static_content_ck/show', :layout => @page.layout
           else
-            render :template => 'static_content/show'
+            render :template => 'static_content_ck/show'
           end
         else
           Rails.cache.write('page_not_exist/'+request.path, true)
@@ -52,8 +52,8 @@ class StaticContentExtension < Spree::Extension
         def add_static_pages_links
           @extension_links << {
             :link => admin_pages_path,
-            :link_text => t('ext_static_content_static_pages'),
-            :description => t('ext_static_content_static_pages_desc')
+            :link_text => t('ext_static_content_ck_static_pages'),
+            :description => t('ext_static_content_ck_static_pages_desc')
           }
         end
       end
