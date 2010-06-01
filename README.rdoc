@@ -13,8 +13,6 @@ Suggesting usage together with the spree-ckeditor extension (http://github.com/d
  $ script/extension install git://github.com/x2es/spree-static-content-ck.git
  $ rake db:migrate
 
-== Inst
-
 = Original README 
 
 == Static Content
