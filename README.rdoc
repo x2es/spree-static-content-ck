@@ -4,14 +4,11 @@ This fork only for own tunes and usage, for now. No plans to evolve original yet
 
 Goal of this fork: cut WYSIWYG-editor in favor to using CKEditor extension (http://github.com/davidnorth/spree-ckeditor) which replaces any TextArea in admin pages by CKEditor.
 
-= Usage
-
-Suggesting usage together with the spree-ckeditor extension (http://github.com/davidnorth/spree-ckeditor), which replaces all admin's TextAreas by CKEditor.
-
-== Install
+= Install
 
  $ script/extension install git://github.com/x2es/spree-static-content-ck.git
  $ rake db:migrate
+ $ script/server
 
 = Original README 
 
