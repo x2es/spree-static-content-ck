@@ -4,7 +4,7 @@
 class StaticContentExtension < Spree::Extension
   version "0.1"
   description "Static content extension for managing static content. Aimed to using with CKEditor."
-  url "http://github.com/x2es/spree-static-content-cks"
+  url "http://github.com/x2es/spree-static-content-ck"
 
   def activate
 
