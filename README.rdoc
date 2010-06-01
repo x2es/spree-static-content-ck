@@ -1,4 +1,12 @@
-= Static Content
+= Fork Goals
+
+This fork only for own tunes and usage, for now. No plans to evolve original yet.
+
+Goal of this fork: cut WYSIWYG-editor in favor to using CKEditor extension (http://github.com/davidnorth/spree-ckeditor) which replaces any TextArea in admin pages by CKEditor.
+
+= Original README 
+
+== Static Content
 
 Good, clean content management of pages for Spree.  You can use this to:
 
