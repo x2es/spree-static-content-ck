@@ -99,17 +99,17 @@ namespace :spec do
   end
 end
 
-desc 'Generate documentation for the static_content extension.'
+desc 'Generate documentation for the static_content_ck extension.'
 Rake::RDocTask.new(:rdoc) do |rdoc|
   rdoc.rdoc_dir = 'rdoc'
-  rdoc.title    = 'StaticContentExtension'
+  rdoc.title    = 'StaticContentCkExtension'
   rdoc.options << '--line-numbers' << '--inline-source'
   rdoc.rdoc_files.include('README')
   rdoc.rdoc_files.include('lib/**/*.rb')
 end
 
 # For extensions that are in transition
-desc 'Test the static_content extension.'
+desc 'Test the static_content_ck extension.'
 Rake::TestTask.new(:test) do |t|
   t.libs << 'lib'
   t.pattern = 'test/**/*_test.rb'
